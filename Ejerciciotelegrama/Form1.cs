@@ -31,9 +31,13 @@ namespace Ejerciciotelegrama
                 textoTelegrama = txtTelegrama.Text;
 
                 // telegrama urgente?
-                if (chkUrgente.Checked)
+                if (radUrgente.Checked)
                 {
                     tipoTelegrama = 'u';
+                }
+                if (radOrdinario.Checked)
+                {
+                    tipoTelegrama = 'o';
                 }
                 //Obtengo el número de palabras que forma el telegrama 
 
@@ -49,7 +53,7 @@ namespace Ejerciciotelegrama
                     else
                     {
                         coste = 2.5 + 0.5 * (numPalabras - 10);
-                    
+                    }
                 }
                 else
                 //Si el telegrama es urgente
