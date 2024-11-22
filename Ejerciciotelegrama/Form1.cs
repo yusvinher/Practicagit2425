@@ -49,6 +49,7 @@ namespace Ejerciciotelegrama
                     else
                     {
                         coste = 2.5 + 0.5 * (numPalabras - 10);
+                    }
                     
                 }
                 else
